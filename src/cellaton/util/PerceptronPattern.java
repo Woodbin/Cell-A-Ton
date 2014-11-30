@@ -17,6 +17,11 @@ public class PerceptronPattern {
 
     }
 
+    public PerceptronPattern(){
+        ys = new int[8];
+        X = new int[8][4];
+    }
+
     public int[] getYs(){return ys;}
     public int[][] getX(){return X;}
 
