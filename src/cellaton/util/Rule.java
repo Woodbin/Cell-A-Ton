@@ -14,6 +14,9 @@ public class Rule {
     private Color color;
     private String name;
 
+
+    //TODO Cleanup constructors
+
     /**
      * Constructors! Many of them, as you can see, for different aproaches to creating new rules
      */
