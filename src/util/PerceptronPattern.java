@@ -8,7 +8,17 @@ public class PerceptronPattern {
     public int[] ys;
     public int[][] X;
 
-    
+
+    public PerceptronPattern(int _numberOfPatterns, int _lengthOfPattern){
+        ys = new int[_numberOfPatterns];
+        X = new int[_numberOfPatterns][_lengthOfPattern];
+
+
+
+    }
+
+    public int[] getYs(){return ys;}
+    public int[][] getX(){return X;}
 
 
 }

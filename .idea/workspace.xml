@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoddsAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ElementalAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MultistateAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PedestrianAutomaton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ElementalAutomaton.java" afterPath="$PROJECT_DIR$/src/ElementalAutomaton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/PerceptronPattern.java" afterPath="$PROJECT_DIR$/src/util/PerceptronPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -69,16 +67,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Perceptron.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util/Perceptron.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Rule.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/Rule.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,20 +125,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElementalAutomaton.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ElementalAutomaton.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ElementalAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.46296296" vertical-offset="0" max-vertical-offset="918">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerceptronPattern.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/PerceptronPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoddsAutomaton.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CoddsAutomaton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoddsAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09259259" vertical-offset="0" max-vertical-offset="918">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
@@ -205,8 +205,9 @@
         <option value="$PROJECT_DIR$/src/IGEX.java" />
         <option value="$PROJECT_DIR$/src/PedestrianAutomaton.java" />
         <option value="$PROJECT_DIR$/src/MultistateAutomaton.java" />
-        <option value="$PROJECT_DIR$/src/ElementalAutomaton.java" />
         <option value="$PROJECT_DIR$/src/CoddsAutomaton.java" />
+        <option value="$PROJECT_DIR$/src/util/PerceptronPattern.java" />
+        <option value="$PROJECT_DIR$/src/ElementalAutomaton.java" />
       </list>
     </option>
   </component>
@@ -412,7 +413,7 @@
       <changelist id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="" />
       <created>1417379383011</created>
       <updated>1417379383011</updated>
-      <workItem from="1417379386781" duration="2274000" />
+      <workItem from="1417379386781" duration="3283000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -450,11 +451,35 @@
       <created>1417381726429</created>
       <updated>1417381726429</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created automata classes">
+      <created>1417381854429</created>
+      <updated>1417381854429</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2274000" />
+    <option name="totallyTimeSpent" value="3283000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -473,7 +498,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -510,7 +535,8 @@
     <MESSAGE value="Created GifSequenceWriter util class" />
     <MESSAGE value="Created CoreAction enum" />
     <MESSAGE value="Created IGEX class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created IGEX class" />
+    <MESSAGE value="Created automata classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created automata classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -634,19 +660,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ElementalAutomaton.java">
+    <entry file="file://$PROJECT_DIR$/src/CoddsAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoddsAutomaton.java">
+    <entry file="file://$PROJECT_DIR$/src/util/PerceptronPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09259259" vertical-offset="0" max-vertical-offset="918">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ElementalAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46296296" vertical-offset="0" max-vertical-offset="918">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
