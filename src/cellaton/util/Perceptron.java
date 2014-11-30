@@ -11,6 +11,13 @@ public class Perceptron {
     private int threshold;
 
 
+    public Perceptron(){
+
+    }
+
+
+
+
     public int respond(int[] input){
         int ret = 0;
         if(input.length!=weights.length){
@@ -27,9 +34,20 @@ public class Perceptron {
     }
 
     public void teach(TeachingPattern pattern){
-        weights = new int[3];
+        weights = new int[pattern.getX()[0].length];
+
 
         //TODO Rosenblatt Teaching
+
+
+
+        threshold = weights[0];
+        int[] newweights = new int[weights.length-1];
+        for(int i = 1; i<weights.length;i++){
+            newweights[i-1]=weights[i];
+        }
+
+
     }
 
 

@@ -1,7 +1,7 @@
 package cellaton;
 
 import cellaton.util.Perceptron;
-import cellaton.util.PerceptronPattern;
+import cellaton.util.TeachingPattern;
 
 /**
  * Created by Woodbin on 30.11.2014.
@@ -29,8 +29,8 @@ public class ElementalAutomaton {
 
     }
 
-    private PerceptronPattern ruleToPatterns(int _rule){
-        PerceptronPattern pc = new PerceptronPattern(8,4);
+    private TeachingPattern ruleToPatterns(int _rule){
+        TeachingPattern pc = new TeachingPattern(8,4);
 
         //TODO make converting from rule to perceptron pattern
 

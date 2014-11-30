@@ -11,10 +11,11 @@ package cellaton.util;
 
 
 import javax.imageio.*;
-import javax.imageio.metadata.*;
-import javax.imageio.stream.*;
-import java.awt.image.*;
-import java.io.*;
+import javax.imageio.metadata.IIOMetadata;
+import javax.imageio.metadata.IIOMetadataNode;
+import javax.imageio.stream.ImageOutputStream;
+import java.awt.image.RenderedImage;
+import java.io.IOException;
 import java.util.Iterator;
 
 public class GifSequenceWriter {
