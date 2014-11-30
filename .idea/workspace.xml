@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/Rule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/Parser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -128,11 +128,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rule.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Rule.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/Rule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41640043" vertical-offset="0" max-vertical-offset="2193">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
               <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/util/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2715655" vertical-offset="0" max-vertical-offset="939">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/DebugCore.java" />
         <option value="$PROJECT_DIR$/src/util/ErrorCode.java" />
         <option value="$PROJECT_DIR$/src/util/Rule.java" />
+        <option value="$PROJECT_DIR$/src/util/Parser.java" />
       </list>
     </option>
   </component>
@@ -367,7 +380,7 @@
       <changelist id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="" />
       <created>1417379383011</created>
       <updated>1417379383011</updated>
-      <workItem from="1417379386781" duration="1151000" />
+      <workItem from="1417379386781" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -385,11 +398,15 @@
       <created>1417380464868</created>
       <updated>1417380464868</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created Rule util class&#10;">
+      <created>1417380574136</created>
+      <updated>1417380574136</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1151000" />
+    <option name="totallyTimeSpent" value="1205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -440,7 +457,8 @@
     <MESSAGE value="Created DebugCore class&#10;Created MainWindow form and class&#10;" />
     <MESSAGE value="DebugCore work&#10;" />
     <MESSAGE value="Created Perceptron util class&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Perceptron util class&#10;" />
+    <MESSAGE value="Created Rule util class&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Rule util class&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,8 +520,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/Rule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41640043" vertical-offset="0" max-vertical-offset="2193">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2715655" vertical-offset="0" max-vertical-offset="939">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
