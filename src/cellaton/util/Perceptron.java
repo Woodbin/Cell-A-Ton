@@ -1,5 +1,7 @@
 package cellaton.util;
 import cellaton.DebugCore;
+
+
 /**
  * Created by Woodbin on 30.11.2014.
  */
@@ -24,7 +26,11 @@ public class Perceptron {
         return ret;
     }
 
+    public void teach(TeachingPattern pattern){
+        weights = new int[3];
 
+        //TODO Rosenblatt Teaching
+    }
 
 
 
