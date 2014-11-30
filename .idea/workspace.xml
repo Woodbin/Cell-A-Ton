@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/util/Perceptron.java" afterPath="$PROJECT_DIR$/src/cellaton/util/Perceptron.java" />
+      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\cellaton\ElementalAutomaton.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -66,11 +66,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Perceptron.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ElementaryAutomaton.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36208734" vertical-offset="102" max-vertical-offset="1309">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+              <folding>
+                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Perceptron.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cellaton/util/Perceptron.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2715655" vertical-offset="0" max-vertical-offset="1173">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="e#308#309#0" expanded="true" />
                 <element signature="e#339#340#0" expanded="true" />
@@ -113,8 +126,9 @@
         <option value="$PROJECT_DIR$/src/util/Perceptron.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/PerceptronPattern.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/TeachingPattern.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/ElementalAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Perceptron.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/ElementalAutomaton.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" />
       </list>
     </option>
   </component>
@@ -319,7 +333,7 @@
       <created>1417379383011</created>
       <updated>1417379383011</updated>
       <workItem from="1417379386781" duration="5334000" />
-      <workItem from="1417385079770" duration="1077000" />
+      <workItem from="1417385079770" duration="3255000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -385,11 +399,15 @@
       <created>1417386044662</created>
       <updated>1417386044662</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Perceptron work">
+      <created>1417386185119</created>
+      <updated>1417386185119</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6411000" />
+    <option name="totallyTimeSpent" value="8589000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -481,11 +499,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cellaton/ElementalAutomaton.java">
+    <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="884">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -624,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/ElementalAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/IGEX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
@@ -666,11 +679,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/util/Perceptron.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2715655" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#308#309#0" expanded="true" />
             <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36208734" vertical-offset="102" max-vertical-offset="1309">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
           </folding>
         </state>
       </provider>
