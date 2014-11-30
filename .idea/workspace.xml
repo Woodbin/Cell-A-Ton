@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/DebugCore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/ElementalAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/IGEX.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/MainWindow.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/PedestrianAutomaton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/util/Perceptron.java" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\CoddsAutomaton.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\DebugCore.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\ElementalAutomaton.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\IGEX.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\MainWindow.form" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\MainWindow.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\MultistateAutomaton.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\PedestrianAutomaton.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\CoreAction.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\ErrorCode.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\GifSequenceWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\Parser.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\PerceptronPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\Rule.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\CoreAction.java" afterPath="$PROJECT_DIR$/src/cellaton/util/CoreAction.java" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\ErrorCode.java" afterPath="$PROJECT_DIR$/src/cellaton/util/ErrorCode.java" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\GifSequenceWriter.java" afterPath="$PROJECT_DIR$/src/cellaton/util/GifSequenceWriter.java" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\Parser.java" afterPath="$PROJECT_DIR$/src/cellaton/util/Parser.java" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\Perceptron.java" afterPath="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\PerceptronPattern.java" afterPath="$PROJECT_DIR$/src/cellaton/util/PerceptronPattern.java" />
-      <change type="MOVED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\util\Rule.java" afterPath="$PROJECT_DIR$/src/cellaton/util/Rule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/util/Perceptron.java" afterPath="$PROJECT_DIR$/src/cellaton/util/Perceptron.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -168,8 +137,8 @@
       <file leaf-file-name="Perceptron.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cellaton/util/Perceptron.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.018104367" vertical-offset="0" max-vertical-offset="939">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.18104367" vertical-offset="0" max-vertical-offset="939">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -451,7 +420,7 @@
       <changelist id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="" />
       <created>1417379383011</created>
       <updated>1417379383011</updated>
-      <workItem from="1417379386781" duration="3932000" />
+      <workItem from="1417379386781" duration="4073000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -497,11 +466,15 @@
       <created>1417382865794</created>
       <updated>1417382865794</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="File moving&#10;work on perceptrn&#10;work on elemental automaton">
+      <created>1417383522771</created>
+      <updated>1417383522772</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3932000" />
+    <option name="totallyTimeSpent" value="4073000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -579,7 +552,8 @@
     <MESSAGE value="Created IGEX class" />
     <MESSAGE value="Created automata classes" />
     <MESSAGE value="Work on elemental automata and perceptrn pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Work on elemental automata and perceptrn pattern" />
+    <MESSAGE value="File moving&#10;work on perceptrn&#10;work on elemental automaton" />
+    <option name="LAST_COMMIT_MESSAGE" value="File moving&#10;work on perceptrn&#10;work on elemental automaton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -718,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/util/Perceptron.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018104367" vertical-offset="0" max-vertical-offset="939">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.18104367" vertical-offset="0" max-vertical-offset="939">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
