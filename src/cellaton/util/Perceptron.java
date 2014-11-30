@@ -12,10 +12,18 @@ public class Perceptron {
 
 
     public Perceptron(){
-
+        threshold=0;
+        weights=new int[3];
     }
 
+    public Perceptron(TeachingPattern _pattern){
+        teach(_pattern);
+    }
 
+    public Perceptron(int _threshold, int[] _weights){
+        weights=_weights;
+        threshold=_threshold;
+    }
 
 
     public int respond(int[] input){
