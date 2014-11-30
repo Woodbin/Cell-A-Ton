@@ -1,7 +1,7 @@
-import util.Perceptron;
-import util.PerceptronPattern;
+package cellaton;
 
-import java.util.ArrayList;
+import cellaton.util.Perceptron;
+import cellaton.util.PerceptronPattern;
 
 /**
  * Created by Woodbin on 30.11.2014.

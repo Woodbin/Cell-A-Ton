@@ -1,4 +1,4 @@
-package util;
+package cellaton.util;
 
 import java.awt.*;
 import java.util.ArrayList;

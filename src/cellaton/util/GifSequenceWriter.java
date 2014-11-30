@@ -1,4 +1,4 @@
-package util;
+package cellaton.util;
 //
 //  GifSequenceWriter.java
 //

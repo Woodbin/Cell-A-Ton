@@ -1,4 +1,6 @@
-import util.ErrorCode;
+package cellaton;
+
+import cellaton.util.ErrorCode;
 
 /**
  * Created by Woodbin on 30.11.2014.
