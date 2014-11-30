@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Woodbin\Documents\bccellaton\src\cellaton\ElementalAutomaton.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -69,12 +69,9 @@
       <file leaf-file-name="ElementaryAutomaton.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36208734" vertical-offset="102" max-vertical-offset="1309">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding>
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1326">
+              <caret line="19" column="116" selection-start-line="19" selection-start-column="116" selection-end-line="19" selection-end-column="116" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -333,7 +330,7 @@
       <created>1417379383011</created>
       <updated>1417379383011</updated>
       <workItem from="1417379386781" duration="5334000" />
-      <workItem from="1417385079770" duration="3255000" />
+      <workItem from="1417385079770" duration="3396000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -403,11 +400,15 @@
       <created>1417386185119</created>
       <updated>1417386185119</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Renamed ElementalAutomaton to ElementaryAutomaton">
+      <created>1417389094084</created>
+      <updated>1417389094084</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8589000" />
+    <option name="totallyTimeSpent" value="8730000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -489,7 +490,8 @@
     <MESSAGE value="created respond method in Perceptron class" />
     <MESSAGE value="renamed PerceptronPattern to TeachingPattern" />
     <MESSAGE value="Perceptron work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Perceptron work" />
+    <MESSAGE value="Renamed ElementalAutomaton to ElementaryAutomaton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed ElementalAutomaton to ElementaryAutomaton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -503,10 +505,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="884">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -690,12 +689,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36208734" vertical-offset="102" max-vertical-offset="1309">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1326">
+          <caret line="19" column="116" selection-start-line="19" selection-start-column="116" selection-end-line="19" selection-end-column="116" />
+          <folding />
         </state>
       </provider>
     </entry>
