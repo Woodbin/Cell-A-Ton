@@ -19,5 +19,10 @@ public class PedestrianAutomaton implements VisualAutomata {
         return null;
     }
 
+    @Override
+    public void wasEdited() {
+
+    }
+
     //TODO Pedestrian Automaton
 }

@@ -11,5 +11,6 @@ public interface VisualAutomata {
 
     public int[][] getCellStates();
     public ArrayList<Color> getColorScheme();
+    public void wasEdited();
 
 }

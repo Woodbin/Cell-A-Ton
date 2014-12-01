@@ -46,6 +46,7 @@ public class ElementaryAutomaton implements VisualAutomata,AutomataActions {
     public void iterate(){
         if(perceptronReady){
             int size = space.length;
+            undoSpace=space;
             int[] newGeneration = new int[size];
             if(bordersContinuous){
                 for(int i = size-1; i<size*2;i++){
@@ -82,9 +83,15 @@ public class ElementaryAutomaton implements VisualAutomata,AutomataActions {
         return ret;
     }
 
-    public void undo(){
+    @Override
+    public void wasEdited() {
 
     }
+
+    public void undo(){
+        space = undoSpace;
+    }
+
 
     public void clear(){
         space = new int[space.length];

@@ -106,6 +106,9 @@ public class MultistateAutomaton implements VisualAutomata, AutomataActions{
         generation++;
     }
 
+    /**
+     *  Initializes basic rules to automaton - GoL, Mazes, HighLife...
+     */
     private void rulesInitialization(){
         rules.add(new Rule(new ArrayList<Integer>(Arrays.asList(2,3)), new ArrayList<Integer>(Arrays.asList(3))));                   //Conway's Game of life sa Default rule
         rules.add(new Rule(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5)), new ArrayList<Integer>(Arrays.asList(3)), 0, new Color(200, 255, 200)));   //Maze
@@ -116,6 +119,10 @@ public class MultistateAutomaton implements VisualAutomata, AutomataActions{
 
     }
 
+    /**
+     * Initializes automaton
+     *
+     */
     private void initialization(){
         rulesInitialization();
         clear();
@@ -123,6 +130,9 @@ public class MultistateAutomaton implements VisualAutomata, AutomataActions{
         undoCellMoores=cellMoores;
     }
 
+    /**
+     * Clears game field
+     */
     public void clear(){
         cellMoores = new int[size][size];
         cellStates = new int[size][size];
@@ -134,6 +144,9 @@ public class MultistateAutomaton implements VisualAutomata, AutomataActions{
         }*/
     }
 
+    /**
+     * Undo function
+     */
     public void undo(){
         cellStates = undoCellStates;
         cellMoores = undoCellMoores;

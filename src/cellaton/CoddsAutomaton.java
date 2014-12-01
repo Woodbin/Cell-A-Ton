@@ -17,6 +17,11 @@ public class CoddsAutomaton implements VisualAutomata,AutomataActions {
     }
 
     @Override
+    public void wasEdited() {
+
+    }
+
+    @Override
     public int[][] getCellStates() {
         return new int[0][];
     }
