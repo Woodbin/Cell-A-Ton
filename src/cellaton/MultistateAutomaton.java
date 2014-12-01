@@ -3,13 +3,15 @@ package cellaton;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import cellaton.util.AutomataActions;
 import cellaton.util.Rule;
 import cellaton.util.VisualAutomata;
 
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class MultistateAutomaton implements VisualAutomata{
+public class MultistateAutomaton implements VisualAutomata, AutomataActions{
 
     //TODO Multistate Automaton
 
@@ -41,7 +43,7 @@ public class MultistateAutomaton implements VisualAutomata{
      * Also exports to GIF when IGEX turned on.
      *
      */
-    public void update() {
+    public void iterate() {
         /*System.out.println("Start");
         System.out.println("States: ");
         printArray(cellStates);             //debug purpose messages
@@ -119,20 +121,25 @@ public class MultistateAutomaton implements VisualAutomata{
 
     private void initialization(){
         rulesInitialization();
-        nullGame();
+        clear();
         undoCellStates=cellStates;
         undoCellMoores=cellMoores;
     }
 
-    public void nullGame(){
+    public void clear(){
         cellMoores = new int[size][size];
         cellStates = new int[size][size];
-        for(int i = 0; i< size; i++){
+     /*   for(int i = 0; i< size; i++){
             for(int j = 0; j< size; j++){
                 cellMoores[i][j] = 0;
                 cellStates[i][j] = 0;
             }
-        }
+        }*/
+    }
+
+    public void undo(){
+        cellStates = undoCellStates;
+        cellMoores = undoCellMoores;
     }
 
     /** Returns the size of grid
