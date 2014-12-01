@@ -15,11 +15,11 @@ public class DebugCore {
     public static DebugCore getInstance() { return instance;}
 
     public static void debugOut(String message) {
-        processIn(message);
+        processOut(message);
     }
 
     public static void debugIn(String command) {
-        processOut(command);
+        processIn(command);
     }
 
     public static void setWindowReference(MainWindow _mw){
