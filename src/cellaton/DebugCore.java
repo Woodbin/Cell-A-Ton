@@ -49,6 +49,10 @@ public class DebugCore {
         switch (errorCode){
             case OKAY: mes = "Everything went better than expected.";
                 break;
+            case IMAGENAMEEXISTS: mes = "Image with given name already exists!";
+                break;
+            case FILEDOESNTEXIST: mes = "Specified file doesn't exist!: ";
+                break;
             default: mes = "UNKNOWN ERRORCODE";
         }
 

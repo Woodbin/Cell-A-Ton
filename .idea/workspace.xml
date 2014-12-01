@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/util/Content.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/util/ContentPipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/util/Content.java" afterPath="$PROJECT_DIR$/src/cellaton/util/Content.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/util/ContentPipeline.java" afterPath="$PROJECT_DIR$/src/cellaton/util/ContentPipeline.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/DebugCore.java" afterPath="$PROJECT_DIR$/src/cellaton/DebugCore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/util/ErrorCode.java" afterPath="$PROJECT_DIR$/src/cellaton/util/ErrorCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/MainWindow.java" afterPath="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" afterPath="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -68,12 +71,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Content.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cellaton/util/Content.java">
+      <file leaf-file-name="MainWindow.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47696477" vertical-offset="0" max-vertical-offset="1155">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="1.7289972" vertical-offset="0" max-vertical-offset="6171">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding>
+                <element signature="e#5612#5613#0" expanded="true" />
+                <element signature="e#5699#5700#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,12 +129,13 @@
         <option value="$PROJECT_DIR$/src/cellaton/util/VisualAutomata.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Automaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/PedestrianAutomaton.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/DebugCore.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/MainWindow.form" />
-        <option value="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/util/ErrorCode.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Content.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/util/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/util/ContentPipeline.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/DebugCore.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -239,6 +246,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bccellaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bccellaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,7 +385,7 @@
       <workItem from="1417379386781" duration="5334000" />
       <workItem from="1417385079770" duration="7453000" />
       <workItem from="1417451134569" duration="2029000" />
-      <workItem from="1417453419163" duration="11003000" />
+      <workItem from="1417453419163" duration="12903000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -494,11 +515,15 @@
       <created>1417464381421</created>
       <updated>1417464381421</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Created Content and ContentPipeline classes">
+      <created>1417465084086</created>
+      <updated>1417465084086</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25819000" />
+    <option name="totallyTimeSpent" value="27719000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -591,7 +616,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Created Rule util class&#10;" />
     <MESSAGE value="Created Parser util class" />
     <MESSAGE value="Created GifSequenceWriter util class" />
     <MESSAGE value="Created CoreAction enum" />
@@ -616,7 +640,8 @@
     <MESSAGE value="Added array override to debugOut()" />
     <MESSAGE value="Updated documentation&#10;Changed debug purposed messages to DebugCore commands" />
     <MESSAGE value="Added icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added icons" />
+    <MESSAGE value="Created Content and ContentPipeline classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Content and ContentPipeline classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -855,22 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/DebugCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5067751" vertical-offset="0" max-vertical-offset="2475">
-          <caret line="19" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24131627" vertical-offset="693" max-vertical-offset="9768">
-          <caret line="34" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/save.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -884,40 +893,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20867209" vertical-offset="0" max-vertical-offset="5379">
-          <caret line="13" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/util/ContentPipeline.java">
+    <entry file="file://$PROJECT_DIR$/src/cellaton/util/Content.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32791328" vertical-offset="0" max-vertical-offset="1107">
-          <caret line="13" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.73170733" vertical-offset="81" max-vertical-offset="1188">
+          <caret line="27" column="0" selection-start-line="16" selection-start-column="39" selection-end-line="17" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/util/ErrorCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23848239" vertical-offset="0" max-vertical-offset="1107">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.20867209" vertical-offset="0" max-vertical-offset="1107">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/util/Content.java">
+    <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47696477" vertical-offset="0" max-vertical-offset="1155">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.33180988" vertical-offset="8118" max-vertical-offset="9735">
+          <caret line="268" column="16" selection-start-line="257" selection-start-column="16" selection-end-line="257" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/DebugCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31436315" vertical-offset="939" max-vertical-offset="2541">
+          <caret line="45" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/util/ContentPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31436315" vertical-offset="543" max-vertical-offset="1650">
+          <caret line="34" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7289972" vertical-offset="0" max-vertical-offset="6171">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#5612#5613#0" expanded="true" />
+            <element signature="e#5699#5700#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

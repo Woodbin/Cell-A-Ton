@@ -255,7 +255,6 @@ public class MultistateAutomaton implements Automaton {
      */
     public int[] getDominant(int x, int y){
         int[] moores = new int[8];
-        int index = 0;
 
         moores[0] = cellStates[(size +x-1)% size][(size +y-1)% size];
         moores[1] = cellStates[(size +x)% size][(size +y-1)% size];

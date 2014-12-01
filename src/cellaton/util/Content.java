@@ -26,12 +26,13 @@ public class Content {
         return imageContent.get(_name);
     }
 
-    public static void addImage(String _name, Image _image){
+    public static boolean addImage(String _name, Image _image){
         if(imageContent.containsKey(_name)){
             DebugCore.debugOut(DebugCore.getErrorMessage(ErrorCode.IMAGENAMEEXISTS));
-            return;
+            return false;
         }
         imageContent.put(_name,_image);
+        return true;
     }
 
 

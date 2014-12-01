@@ -1,6 +1,8 @@
 package cellaton;
 
 import cellaton.util.Automaton;
+import cellaton.util.Content;
+import cellaton.util.ContentPipeline;
 
 import javax.swing.*;
 import java.awt.*;
@@ -60,6 +62,8 @@ public class MainWindow {
         buildMenu();
         frame.setJMenuBar(menuBar);
 
+        assingIcons();
+
         frame.pack();
         frame.setVisible(true);
     }
@@ -68,6 +72,7 @@ public class MainWindow {
      * Constructor
      */
     public MainWindow(){
+        loadIcons();
         create();
 
     }
@@ -156,10 +161,31 @@ public class MainWindow {
 
         menuBar = new JMenuBar();
 
-
-
     }
 
+    /**
+     * Loads icons(images) to Content class
+     */
+    private void loadIcons(){
+        ContentPipeline.loadImage("res/clear.png","clearButtonIcon");
+        ContentPipeline.loadImage("res/close.png","closeButtonIcon");
+        ContentPipeline.loadImage("res/color.png","colorButtonIcon");
+        ContentPipeline.loadImage("res/export_gif.png","gifExportButtonIcon");
+        ContentPipeline.loadImage("res/export_image.png","imageExportButtonIcon");
+        ContentPipeline.loadImage("res/iterate.png","iterateButtonIcon");
+        ContentPipeline.loadImage("res/iterate_cont.png","ContinuousIterateButtonIcon");
+        ContentPipeline.loadImage("res/load.png","loadButtonIcon");
+        ContentPipeline.loadImage("res/rule_add.png","addRuleButtonIcon");
+        ContentPipeline.loadImage("res/rule_delete.png","deleteRuleButtonIcon");
+        ContentPipeline.loadImage("res/rule_edit.png","editRuleButtonIcon");
+        ContentPipeline.loadImage("res/save.png","saveButtonIcon");
+        ContentPipeline.loadImage("res/settings.png","settingsButtonIcon");
+        ContentPipeline.loadImage("res/undo.png","undoButtonIcon");
+    }
+
+    private void assingIcons(){
+        clearButton.setIcon(new ImageIcon(Content.getImage("clearButtonIcon")));
+    }
 
 
 

@@ -7,6 +7,7 @@ public enum ErrorCode {
     OKAY,   //Everything went better than expected
     PERCEPTRONERROR,
     IMAGENAMEEXISTS,
+    FILEDOESNTEXIST
 
 
 }
