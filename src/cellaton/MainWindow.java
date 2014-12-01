@@ -27,6 +27,13 @@ public class MainWindow {
     private JTextArea consoleOutput;
     private JTextField commandTextField;
     private JButton clearButton;
+    private JButton saveButton;
+    private JButton loadButton;
+    private JButton undoButton;
+    private JButton iterateButton;
+    private JButton iterateContinuousButton;
+    private JButton settingsButton;
+    private JButton closeButton;
     private JMenuBar menuBar;
     private Automaton automaton;
 
@@ -74,10 +81,8 @@ public class MainWindow {
     public MainWindow(){
         loadIcons();
         create();
-
+        setAutomaton(new MultistateAutomaton(16));
     }
-
-
 
     /**
      * Sets current automaton
@@ -109,6 +114,11 @@ public class MainWindow {
         if(drawGrid&&(size>8)) drawLineGrid(g,cells.length);
     }
 
+    /**
+     * Draws line grid on graphical component
+     * @param g Graphics
+     * @param count number of lines
+     */
     private void drawLineGrid(Graphics g, int count){
         Color lineColor = Color.DARK_GRAY;
         g.setColor(lineColor);
@@ -118,6 +128,10 @@ public class MainWindow {
         }
     }
 
+    /**
+     * Forwards text to consoleOutput
+     * @param message
+     */
     public void forwardToConsole(String message){
         consoleOutput.append(message + "\n");
     }
@@ -155,12 +169,10 @@ public class MainWindow {
         return pos;
     }
 
-
-    private  void buildMenu(){
-        //TODO Build menuBar here
+    private void buildMenu(){
+        //TODO Build jmenuBar here
 
         menuBar = new JMenuBar();
-
     }
 
     /**
@@ -173,7 +185,7 @@ public class MainWindow {
         ContentPipeline.loadImage("res/export_gif.png","gifExportButtonIcon");
         ContentPipeline.loadImage("res/export_image.png","imageExportButtonIcon");
         ContentPipeline.loadImage("res/iterate.png","iterateButtonIcon");
-        ContentPipeline.loadImage("res/iterate_cont.png","ContinuousIterateButtonIcon");
+        ContentPipeline.loadImage("res/iterate_cont.png","continuousIterateButtonIcon");
         ContentPipeline.loadImage("res/load.png","loadButtonIcon");
         ContentPipeline.loadImage("res/rule_add.png","addRuleButtonIcon");
         ContentPipeline.loadImage("res/rule_delete.png","deleteRuleButtonIcon");
@@ -185,12 +197,13 @@ public class MainWindow {
 
     private void assingIcons(){
         clearButton.setIcon(new ImageIcon(Content.getImage("clearButtonIcon")));
+        loadButton.setIcon(new ImageIcon(Content.getImage("loadButtonIcon")));
+        saveButton.setIcon(new ImageIcon(Content.getImage("saveButtonIcon")));
+        undoButton.setIcon(new ImageIcon(Content.getImage("undoButtonIcon")));
+        iterateButton.setIcon(new ImageIcon(Content.getImage("iterateButtonIcon")));
+        iterateContinuousButton.setIcon(new ImageIcon(Content.getImage("continuousIterateButtonIcon")));
+        settingsButton.setIcon(new ImageIcon(Content.getImage("settingsButtonIcon")));
+        closeButton.setIcon(new ImageIcon(Content.getImage("closeButtonicon")));
+        //TODO assign icons to buttons
     }
-
-
-
-
-
-
-
 }

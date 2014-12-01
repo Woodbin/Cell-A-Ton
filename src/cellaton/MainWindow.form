@@ -30,7 +30,57 @@
           <component id="e5e33" class="javax.swing.JButton" binding="clearButton">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="2ebb8" class="javax.swing.JButton" binding="saveButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="94c17" class="javax.swing.JButton" binding="loadButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="b0f3b" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="29d1d" class="javax.swing.JButton" binding="undoButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="41c0c" class="javax.swing.JButton" binding="iterateButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c4b60" class="javax.swing.JButton" binding="iterateContinuousButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="70eb6" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="9dc80" class="javax.swing.JButton" binding="settingsButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="84b6f" class="javax.swing.JButton" binding="closeButton">
+            <constraints/>
+            <properties>
+              <text value=""/>
             </properties>
           </component>
         </children>
