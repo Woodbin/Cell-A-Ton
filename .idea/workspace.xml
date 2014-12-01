@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/DebugCore.java" afterPath="$PROJECT_DIR$/src/cellaton/DebugCore.java" />
+    <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="" />
+    <list id="3d1d2bd2-bd0c-49f2-ae0e-6eaebc596247" name="New changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/MainWindow.form" afterPath="$PROJECT_DIR$/src/cellaton/MainWindow.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/MainWindow.java" afterPath="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" afterPath="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DebugCore.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cellaton/DebugCore.java">
+      <file leaf-file-name="MultistateAutomaton.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80487806" vertical-offset="0" max-vertical-offset="2079">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.061739944" vertical-offset="891" max-vertical-offset="9768">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -116,16 +121,16 @@
         <option value="$PROJECT_DIR$/src/cellaton/util/Rule.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Visualisable.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Automata.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/MainWindow.form" />
-        <option value="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/AutomataActions.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/VisualAutomata.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Automaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/PedestrianAutomaton.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/MainWindow.form" />
+        <option value="$PROJECT_DIR$/src/cellaton/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/cellaton/DebugCore.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
       </list>
     </option>
   </component>
@@ -355,12 +360,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="" />
+      <changelist id="3d1d2bd2-bd0c-49f2-ae0e-6eaebc596247" name="New changelist" comment="" />
       <created>1417379383011</created>
       <updated>1417379383011</updated>
       <workItem from="1417379386781" duration="5334000" />
       <workItem from="1417385079770" duration="7453000" />
       <workItem from="1417451134569" duration="2029000" />
-      <workItem from="1417453419163" duration="6844000" />
+      <workItem from="1417453419163" duration="9286000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -474,11 +480,19 @@
       <created>1417460806641</created>
       <updated>1417460806641</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fixed switched commands int debugIn and debugOut">
+      <created>1417460903632</created>
+      <updated>1417460903632</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added array override to debugOut()">
+      <created>1417462868148</created>
+      <updated>1417462868148</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21660000" />
+    <option name="totallyTimeSpent" value="24102000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -502,7 +516,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1108" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21979167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -518,10 +532,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942238" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20758122" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" x="44" y="389" width="1920" height="226" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14270833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14270833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15885417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15885417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -571,8 +585,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="created main" />
-    <MESSAGE value="Created DebugCore class&#10;Created MainWindow form and class&#10;" />
     <MESSAGE value="DebugCore work&#10;" />
     <MESSAGE value="Created Perceptron util class&#10;" />
     <MESSAGE value="Created Rule util class&#10;" />
@@ -596,7 +608,9 @@
     <MESSAGE value="Removed some TODOs" />
     <MESSAGE value="MainWindow GUI Work&#10;drawing work&#10;added wasEdited to VisualAutomata interface&#10;Implemented wasEdited in MultistateAutomatn" />
     <MESSAGE value="Merged VisualAutomata and AutomataActions to one Automaton interface&#10;DebugCore and DebugConsole work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged VisualAutomata and AutomataActions to one Automaton interface&#10;DebugCore and DebugConsole work" />
+    <MESSAGE value="Fixed switched commands int debugIn and debugOut" />
+    <MESSAGE value="Added array override to debugOut()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added array override to debugOut()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -810,39 +824,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/util/Perceptron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8943089" vertical-offset="495" max-vertical-offset="2211">
           <caret line="47" column="23" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32791328" vertical-offset="1485" max-vertical-offset="5016">
-          <caret line="61" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/util/Automaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20867209" vertical-offset="0" max-vertical-offset="1107">
-          <caret line="8" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32791328" vertical-offset="0" max-vertical-offset="1419">
-          <caret line="16" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -855,14 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.675503" vertical-offset="198" max-vertical-offset="9702">
-          <caret line="172" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/PedestrianAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29810297" vertical-offset="0" max-vertical-offset="1386">
@@ -871,10 +848,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04607046" vertical-offset="312" max-vertical-offset="1419">
+          <caret line="16" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29810297" vertical-offset="0" max-vertical-offset="5478">
+          <caret line="16" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/util/Automaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47696477" vertical-offset="0" max-vertical-offset="1107">
+          <caret line="17" column="25" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/DebugCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80487806" vertical-offset="0" max-vertical-offset="2079">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.5067751" vertical-offset="0" max-vertical-offset="2475">
+          <caret line="19" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.061739944" vertical-offset="891" max-vertical-offset="9768">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding />
         </state>
       </provider>

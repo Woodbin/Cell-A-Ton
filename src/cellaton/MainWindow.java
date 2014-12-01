@@ -4,6 +4,8 @@ import cellaton.util.Automaton;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 /**
@@ -21,6 +23,7 @@ public class MainWindow {
     private JPanel consolePanel;
     private JScrollPane consoleScrollPane;
     private JTextArea consoleOutput;
+    private JTextField commandTextField;
     private JMenuBar menuBar;
     private Automaton automaton;
 
@@ -39,14 +42,25 @@ public class MainWindow {
         frame = new JFrame("MainWindow");
         frame.setContentPane(mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+
+
+        //TODO EVENTS
+        commandTextField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode()==KeyEvent.VK_ENTER) DebugCore.debugIn(commandTextField.getText());
+
+                super.keyPressed(e);
+            }
+        });
 
         DebugCore.setWindowReference(this);
 
         buildMenu();
         frame.setJMenuBar(menuBar);
 
+        frame.pack();
+        frame.setVisible(true);
     }
 
     /**
@@ -54,7 +68,10 @@ public class MainWindow {
      */
     public MainWindow(){
         create();
+
     }
+
+
 
     /**
      * Sets current automaton
@@ -64,10 +81,13 @@ public class MainWindow {
         automaton = _va;
     }
 
-    private void draw(){
+
+    /**
+     * Draws automaton grid to graphical element
+     */
+    private void draw(Graphics g, int size, boolean drawGrid){
         int[][] cells = automaton.getCellStates();
         ArrayList<Color> colors = automaton.getColorScheme();
-        Graphics g = gridScrollPane.getGraphics();
         int sizeX = cells[0].length;
         int sizeY = cells.length;
         Color c;
@@ -76,11 +96,11 @@ public class MainWindow {
                 if(cells[i][j]==0) c = Color.BLACK;
                 else c = colors.get(cells[i][j]-1);
                 g.setColor(c);
-                g.fillRect(i*cellSize,j*cellSize,cellSize,cellSize);
+                g.fillRect(i*size,j*size,size,size);
                // if(igexAnimation)             //TODO IGEX shutter
             }
         }
-        if(cellSize>8) drawLineGrid(g,cells.length);
+        if(drawGrid&&(size>8)) drawLineGrid(g,cells.length);
     }
 
     private void drawLineGrid(Graphics g, int count){

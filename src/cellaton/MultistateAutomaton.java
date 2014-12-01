@@ -34,19 +34,20 @@ public class MultistateAutomaton implements Automaton {
 
     // ~~~~~ THE MAIN UPDATE METHOD ~~~~~
 
-    /** The Automata
+    /** The Automaton
      * The big, messy, ugly thing which eats numbers and turns them to life .
      * Also exports to GIF when IGEX turned on.
      *
      */
     public void iterate() {
-        /*System.out.println("Start");
-        System.out.println("States: ");
-        printArray(cellStates);             //debug purpose messages
-        System.out.println("Moores: ");
-        printArray(cellMoores);*/
+        /*DebugCore.debugOut("MultistateAutomaton iteration start");
+        DebugCore.debugOut("States: ");
+        DebugCore.debugOut(cellStates);             //debug purpose messages
+        DebugCore.debugOut("Moores: ");
+        DebugCore.debugOut(cellMoores);*/
         if(edited) updateMoores();
-        // printArray(cellMoores);
+        //DebugCore.debugOut("Updated Moores:")
+        //DebugCore.debugOut(cellMoores);
         undoCellStates = cellStates;
         undoCellMoores = cellMoores;
         int[][] newStates = new int[size][size];        //TODO perhaps optimize as newStates = cellStates?
@@ -68,7 +69,6 @@ public class MultistateAutomaton implements Automaton {
                     boolean survived = false;
                     boolean died = false;
                     liveloop: for(Integer l: rules.get(cellStates[i% size][j% size]-1).getLive()){
-                        // System.out.print("l: "+l);            //debug purpose message
                         if((cellMoores[i% size][j% size]==l)){
                             newStates[i% size][j% size] = cellStates[i% size][j% size];
                             died = false;
@@ -85,7 +85,6 @@ public class MultistateAutomaton implements Automaton {
                     boolean changed = false;
                     int newRule = genetics(i,j);
                     reviveloop:for(Integer r : rules.get(newRule-1).getRevive()){
-                        // System.out.print("r: "+r);            //debug purpose message
                         if(!changed){
                             if(cellMoores[i% size][j% size]==r){
                                 newStates[i% size][j% size] = newRule;
@@ -115,7 +114,6 @@ public class MultistateAutomaton implements Automaton {
         rules.add(new Rule(new ArrayList<Integer>(Arrays.asList(3,5,8)), new ArrayList<Integer>(Arrays.asList(3, 7, 8)), 3, new Color(128,128, 55)));       //Dunno what
         rules.add(new Rule(new ArrayList<Integer>(Arrays.asList(3, 4, 5, 7, 8)), new ArrayList<Integer>(Arrays.asList(3, 6, 7, 8)), 0, Color.CYAN));        //Day and Night
         rules.add(new Rule(new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5)), new ArrayList<Integer>(Arrays.asList(4, 5, 6, 7, 8)), 0, new Color(0, 0, 128)));  //Walled Cities
-
     }
 
     /**
@@ -136,7 +134,7 @@ public class MultistateAutomaton implements Automaton {
         cellMoores = new int[size][size];
         cellStates = new int[size][size];
      /*   for(int i = 0; i< size; i++){
-            for(int j = 0; j< size; j++){
+            for(int j = 0; j< size; j++){ //TODO if the above works, it will be optimized
                 cellMoores[i][j] = 0;
                 cellStates[i][j] = 0;
             }
@@ -167,7 +165,9 @@ public class MultistateAutomaton implements Automaton {
     }
 
 
-
+    /**
+     * Signals when the states have been externally changed
+     */
     public void wasEdited(){
         edited = true;
     }
@@ -186,6 +186,9 @@ public class MultistateAutomaton implements Automaton {
         //return 1;
     }
 
+    /**
+     * Updates Moores count
+     */
     private void updateMoores(){
         int[][] newMoores = new int[size][size];
         for(int i = 0; i< size; i++){
@@ -193,14 +196,12 @@ public class MultistateAutomaton implements Automaton {
                 newMoores[i][j] = 0;
             }
         }
-
         for(int i = size; i<2* size;i++){
             for(int j = size; j<2* size;j++){
                 if(cellStates[i% size][j% size]!=0) changeMoore(newMoores,i,j,true);
                 //if(cellStates[i%size][j%size]==0) changeMoore(newMoores,i,j,false);
             }
         }
-
         cellMoores = newMoores;
         edited = false;
     }
@@ -244,7 +245,6 @@ public class MultistateAutomaton implements Automaton {
         for(Rule r : rules){
             if(r.getDieInto()==which) r.setDieInto(0);
         }
-
     }
 
     /** Gets dominant rule
@@ -283,11 +283,13 @@ public class MultistateAutomaton implements Automaton {
         if(ret[0]==0)ret[0]=1;
         if(ret[1]==0) ret[1]=ret[0];
         return ret ;
-
-
-
     }
 
+    /**
+     * Inherited interface metod
+     *
+     * @return  array of cellstates
+     */
     public int[][] getCellStates(){
         return cellStates;
     }
