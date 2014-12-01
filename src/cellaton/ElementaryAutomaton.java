@@ -1,7 +1,6 @@
 package cellaton;
 
-import cellaton.util.AutomataActions;
-import cellaton.util.VisualAutomata;
+import cellaton.util.Automaton;
 import cellaton.util.Perceptron;
 import cellaton.util.TeachingPattern;
 
@@ -11,7 +10,7 @@ import java.util.ArrayList;
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class ElementaryAutomaton implements VisualAutomata,AutomataActions {
+public class ElementaryAutomaton implements Automaton {
 
     private int[] space;
     private int[] undoSpace;

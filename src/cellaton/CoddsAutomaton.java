@@ -1,8 +1,6 @@
 package cellaton;
 
-import cellaton.util.AutomataActions;
-import cellaton.util.VisualAutomata;
-import cellaton.util.Rule;
+import cellaton.util.Automaton;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -10,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class CoddsAutomaton implements VisualAutomata,AutomataActions {
+public class CoddsAutomaton implements Automaton {
     @Override
     public ArrayList<Color> getColorScheme() {
         return null;

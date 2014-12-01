@@ -1,7 +1,6 @@
 package cellaton;
 
-import cellaton.util.AutomataActions;
-import cellaton.util.VisualAutomata;
+import cellaton.util.Automaton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,8 +20,9 @@ public class MainWindow {
     private JPanel tabProperties;
     private JPanel consolePanel;
     private JScrollPane consoleScrollPane;
+    private JTextArea consoleOutput;
     private JMenuBar menuBar;
-    private VisualAutomata automaton;
+    private Automaton automaton;
 
     private IGEX igex;
 
@@ -32,7 +32,9 @@ public class MainWindow {
     private int stateBrush = 1;
 
 
-
+    /**
+     * Creates Window and packs
+     */
     private void create(){
         frame = new JFrame("MainWindow");
         frame.setContentPane(mainPanel);
@@ -40,16 +42,25 @@ public class MainWindow {
         frame.pack();
         frame.setVisible(true);
 
+        DebugCore.setWindowReference(this);
+
         buildMenu();
         frame.setJMenuBar(menuBar);
 
     }
 
+    /**
+     * Constructor
+     */
     public MainWindow(){
         create();
     }
 
-    public void setAutomaton(VisualAutomata _va){
+    /**
+     * Sets current automaton
+     * @param _va class implementing
+     */
+    public void setAutomaton(Automaton _va){
         automaton = _va;
     }
 
@@ -81,6 +92,10 @@ public class MainWindow {
         }
     }
 
+    public void forwardToConsole(String message){
+        consoleOutput.append(message + "\n");
+    }
+
     /**
      *  Draws a single cell to graphics component
      * @param g graphics
@@ -89,7 +104,7 @@ public class MainWindow {
      * @param y -''-
      */
     private void drawCell(Graphics g, int colorId, int x, int y){
-        Color c = automaton.getColorScheme().get(colorId-1);
+        Color c = automaton.getColorScheme().get(colorId - 1);
         g.setColor(c);
         g.fillRect(cellSize * x, cellSize * y, cellSize, cellSize);
     }

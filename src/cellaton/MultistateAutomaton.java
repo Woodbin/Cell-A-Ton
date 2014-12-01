@@ -4,14 +4,13 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import cellaton.util.AutomataActions;
+import cellaton.util.Automaton;
 import cellaton.util.Rule;
-import cellaton.util.VisualAutomata;
 
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class MultistateAutomaton implements VisualAutomata, AutomataActions{
+public class MultistateAutomaton implements Automaton {
 
     private int size = 16;
     private int[][] cellStates = new int[16][16];
