@@ -6,7 +6,7 @@ package cellaton.util;
 public enum ErrorCode {
     OKAY,   //Everything went better than expected
     PERCEPTRONERROR,
-
+    IMAGENAMEEXISTS,
 
 
 }
