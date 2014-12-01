@@ -13,8 +13,6 @@ import java.util.ArrayList;
  */
 public class ElementaryAutomaton implements VisualAutomata,AutomataActions {
 
-    //TODO Elemental Automaton
-
     private int[] space;
     private int[] undoSpace;
     private int rule;

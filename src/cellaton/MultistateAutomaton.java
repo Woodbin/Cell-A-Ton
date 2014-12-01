@@ -13,9 +13,6 @@ import cellaton.util.VisualAutomata;
  */
 public class MultistateAutomaton implements VisualAutomata, AutomataActions{
 
-    //TODO Multistate Automaton
-
-
     private int size = 16;
     private int[][] cellStates = new int[16][16];
     private int[][] cellMoores = new int[16][16];
