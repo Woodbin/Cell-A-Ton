@@ -1,12 +1,16 @@
 package cellaton;
 
+import cellaton.util.VisualAutomata;
 import cellaton.util.Perceptron;
 import cellaton.util.TeachingPattern;
+
+import java.awt.*;
+import java.util.ArrayList;
 
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class ElementaryAutomaton {
+public class ElementaryAutomaton implements VisualAutomata {
 
     //TODO Elemental Automaton
 
@@ -28,8 +32,6 @@ public class ElementaryAutomaton {
         processer = new Perceptron();
         processer.teach(ruleToPatterns(rule));
         perceptronReady = true;
-
-
     }
 
     private TeachingPattern ruleToPatterns(int _rule){
@@ -65,9 +67,17 @@ public class ElementaryAutomaton {
         }
     }
 
+    public int[][] getCellStates() {
+        int[][] ret = new int[1][space.length];
+        ret[1] = space;
+        return ret;
+    }
 
-
-
-
+    public ArrayList<Color> getColorScheme(){
+        ArrayList<Color>  ret = new ArrayList<Color>();
+        ret.add(Color.BLACK);
+        ret.add(Color.WHITE);
+        return ret;
+    }
 
 }

@@ -4,10 +4,12 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import cellaton.util.Rule;
+import cellaton.util.VisualAutomata;
+
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class MultistateAutomaton {
+public class MultistateAutomaton implements VisualAutomata{
 
     //TODO Multistate Automaton
 
@@ -270,5 +272,14 @@ public class MultistateAutomaton {
 
     }
 
-
+    public int[][] getCellStates(){
+        return cellStates;
+    }
+    public ArrayList<Color> getColorScheme() {
+        ArrayList<Color> ret = new ArrayList<Color>();
+        for(int i = 0; i<rules.size();i++){
+            ret.add(rules.get(i).getColor());
+        }
+        return ret;
+    }
 }
