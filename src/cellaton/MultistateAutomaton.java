@@ -53,13 +53,13 @@ public class MultistateAutomaton implements VisualAutomata, AutomataActions{
         // printArray(cellMoores);
         undoCellStates = cellStates;
         undoCellMoores = cellMoores;
-        int[][] newStates = new int[size][size];
+        int[][] newStates = new int[size][size];        //TODO perhaps optimize as newStates = cellStates?
         for(int i = 0; i< size; i++){
             for(int j = 0; j< size;j++){
                 newStates[i][j] = cellStates[i][j];
             }
         }
-        int[][] newMoores = new int[size][size];
+        int[][] newMoores = new int[size][size]; //TODO perhaps optimize as newMoores = cellMoores?
         for(int i = 0; i< size; i++){
             for(int j = 0; j< size;j++){
                 newMoores[i][j] = cellMoores[i][j];

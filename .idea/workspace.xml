@@ -93,13 +93,13 @@
       <file leaf-file-name="MultistateAutomaton.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6111112" vertical-offset="0" max-vertical-offset="4964">
-              <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.6851852" vertical-offset="408" max-vertical-offset="4964">
+              <caret line="61" column="92" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10020#10021#0" expanded="true" />
-                <element signature="e#10053#10054#0" expanded="true" />
-                <element signature="e#10146#10153#0" expanded="true" />
+                <element signature="e#10129#10130#0" expanded="true" />
+                <element signature="e#10162#10163#0" expanded="true" />
+                <element signature="e#10255#10262#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -441,7 +441,7 @@
       <created>1417379383011</created>
       <updated>1417379383011</updated>
       <workItem from="1417379386781" duration="5334000" />
-      <workItem from="1417385079770" duration="6965000" />
+      <workItem from="1417385079770" duration="7121000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -535,11 +535,15 @@
       <created>1417392771963</created>
       <updated>1417392771963</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Implemented AutomataActions in MultistateAutomaton">
+      <created>1417392884447</created>
+      <updated>1417392884447</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12299000" />
+    <option name="totallyTimeSpent" value="12455000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -627,7 +631,8 @@
     <MESSAGE value="Implemented VisualAutomata interface (for IGEX and graphics) &#10;" />
     <MESSAGE value="Created AutomataActions interface for future core use" />
     <MESSAGE value="Implemented AutomataActions in ElementaryAutomaton" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented AutomataActions in ElementaryAutomaton" />
+    <MESSAGE value="Implemented AutomataActions in MultistateAutomaton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented AutomataActions in MultistateAutomaton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -863,13 +868,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6111112" vertical-offset="0" max-vertical-offset="4964">
-          <caret line="141" column="36" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.6851852" vertical-offset="408" max-vertical-offset="4964">
+          <caret line="61" column="92" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10020#10021#0" expanded="true" />
-            <element signature="e#10053#10054#0" expanded="true" />
-            <element signature="e#10146#10153#0" expanded="true" />
+            <element signature="e#10129#10130#0" expanded="true" />
+            <element signature="e#10162#10163#0" expanded="true" />
+            <element signature="e#10255#10262#0" expanded="true" />
           </folding>
         </state>
       </provider>
