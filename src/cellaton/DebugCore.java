@@ -18,6 +18,10 @@ public class DebugCore {
         processOut(message);
     }
 
+    public static void debugOut(int[][] array){
+        printArray(array);
+    }
+
     public static void debugIn(String command) {
         processIn(command);
     }
@@ -54,7 +58,15 @@ public class DebugCore {
         return mes;
     }
 
-
+    private static void printArray(int[][] pole){
+        for(int i=0; i<pole.length;i++) {
+            String line = new String();
+            for (int j = 0; j < pole[i].length; j++) {
+                line += pole[i][j] + "-";
+            }
+            DebugCore.debugOut("\n");
+        }
+    }
 
 
 
