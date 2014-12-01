@@ -24,6 +24,7 @@ public class MainWindow {
     private JScrollPane consoleScrollPane;
     private JTextArea consoleOutput;
     private JTextField commandTextField;
+    private JButton clearButton;
     private JMenuBar menuBar;
     private Automaton automaton;
 
@@ -48,7 +49,7 @@ public class MainWindow {
         commandTextField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                if(e.getKeyCode()==KeyEvent.VK_ENTER) DebugCore.debugIn(commandTextField.getText());
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) DebugCore.debugIn(commandTextField.getText());
 
                 super.keyPressed(e);
             }
@@ -133,7 +134,6 @@ public class MainWindow {
         int[] pos = detectCoordinates(mouseX,mouseY);
         automaton.getCellStates()[pos[0]][pos[1]]=stateBrush;
         drawCell(gridScrollPane.getGraphics(), stateBrush,pos[0],pos[1]);
-        //Néééé ono to takhle nejde :(
 
     }
 
