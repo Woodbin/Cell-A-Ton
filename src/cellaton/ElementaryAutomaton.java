@@ -1,5 +1,6 @@
 package cellaton;
 
+import cellaton.util.AutomataActions;
 import cellaton.util.VisualAutomata;
 import cellaton.util.Perceptron;
 import cellaton.util.TeachingPattern;
@@ -10,11 +11,12 @@ import java.util.ArrayList;
 /**
  * Created by Woodbin on 30.11.2014.
  */
-public class ElementaryAutomaton implements VisualAutomata {
+public class ElementaryAutomaton implements VisualAutomata,AutomataActions {
 
     //TODO Elemental Automaton
 
     private int[] space;
+    private int[] undoSpace;
     private int rule;
     private Perceptron processer;
     private boolean perceptronReady;
@@ -26,6 +28,7 @@ public class ElementaryAutomaton implements VisualAutomata {
 
     private ElementaryAutomaton(int _size, int _rule, boolean _bordersContinuous){
         space = new int[_size];
+        undoSpace = space;
         rule = _rule;
         bordersContinuous = _bordersContinuous;
 
@@ -42,7 +45,7 @@ public class ElementaryAutomaton implements VisualAutomata {
         return pc;
     }
 
-    public void generate(){
+    public void iterate(){
         if(perceptronReady){
             int size = space.length;
             int[] newGeneration = new int[size];
@@ -63,6 +66,7 @@ public class ElementaryAutomaton implements VisualAutomata {
                 cells = new int[]{space[size-3],space[size-2], space[size-1]};
                 newGeneration[size-1] = processer.respond(cells);
             }
+            undoSpace = space;
             space = newGeneration;
         }
     }
@@ -79,5 +83,14 @@ public class ElementaryAutomaton implements VisualAutomata {
         ret.add(Color.WHITE);
         return ret;
     }
+
+    public void undo(){
+
+    }
+
+    public void clear(){
+        space = new int[space.length];
+    }
+
 
 }

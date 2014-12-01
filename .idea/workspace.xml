@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0303f9bf-692f-4f60-b533-9ac2dd1bf0f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cellaton/util/AutomataActions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java" afterPath="$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" afterPath="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bccellaton.iws" />
@@ -66,13 +67,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ElementaryAutomaton.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ElementaryAutomaton.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3888889" vertical-offset="714" max-vertical-offset="1632">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
               <folding>
-                <element signature="e#2354#2361#0" expanded="true" />
+                <element signature="e#2494#2501#0" expanded="true" />
+                <element signature="e#2647#2648#0" expanded="true" />
+                <element signature="e#2692#2693#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,14 +157,14 @@
       <file leaf-file-name="CoddsAutomaton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,11 +180,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutomataActions.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AutomataActions.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cellaton/util/AutomataActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14814815" vertical-offset="0" max-vertical-offset="918">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -228,11 +231,11 @@
         <option value="$PROJECT_DIR$/src/cellaton/util/Visualisable.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/Automata.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/VisualAutomata.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java" />
-        <option value="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/PedestrianAutomaton.java" />
         <option value="$PROJECT_DIR$/src/cellaton/util/AutomataActions.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java" />
+        <option value="$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java" />
       </list>
     </option>
   </component>
@@ -439,7 +442,7 @@
       <created>1417379383011</created>
       <updated>1417379383011</updated>
       <workItem from="1417379386781" duration="5334000" />
-      <workItem from="1417385079770" duration="6585000" />
+      <workItem from="1417385079770" duration="6853000" />
     </task>
     <task id="LOCAL-00001" summary="created main">
       <created>1417379831282</created>
@@ -525,11 +528,15 @@
       <created>1417392196995</created>
       <updated>1417392196995</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Created AutomataActions interface for future core use">
+      <created>1417392498120</created>
+      <updated>1417392498121</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11919000" />
+    <option name="totallyTimeSpent" value="12187000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -615,7 +622,8 @@
     <MESSAGE value="ElementaryAutomaton work" />
     <MESSAGE value="MultistateAutomaton work" />
     <MESSAGE value="Implemented VisualAutomata interface (for IGEX and graphics) &#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented VisualAutomata interface (for IGEX and graphics) &#10;" />
+    <MESSAGE value="Created AutomataActions interface for future core use" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created AutomataActions interface for future core use" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -630,7 +638,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="884">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#2354#2361#0" expanded="true" />
+            <element signature="e#2494#2501#0" expanded="true" />
+            <element signature="e#2647#2648#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,30 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#2354#2361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/MultistateAutomaton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4845">
@@ -852,9 +838,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cellaton/util/AutomataActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14814815" vertical-offset="0" max-vertical-offset="918">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/CoddsAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cellaton/ElementaryAutomaton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3888889" vertical-offset="714" max-vertical-offset="1632">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+          <folding>
+            <element signature="e#2494#2501#0" expanded="true" />
+            <element signature="e#2647#2648#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
