@@ -12,11 +12,11 @@ import cellaton.util.Rule;
  */
 public class MultistateAutomaton implements Automaton {
 
-    private int size = 16;
-    private int[][] cellStates = new int[16][16];
-    private int[][] cellMoores = new int[16][16];
-    private int[][] undoCellStates = new int[16][16];
-    private int[][] undoCellMoores = new int[16][16];
+    private int size;
+    private int[][] cellStates;
+    private int[][] cellMoores;
+    private int[][] undoCellStates ;
+    private int[][] undoCellMoores;
 
     private int generation = 0;
 
@@ -26,7 +26,7 @@ public class MultistateAutomaton implements Automaton {
     private boolean bordersContinuous = true; //TODO Implement MultistateAutomaton for closed borders
 
     // ~~~~~ CONSTRUCTOR ~~~~~
-    public MultistateAutomaton(int r){
+    public  MultistateAutomaton(int r){
         size = r;
         initialization();
     }
@@ -40,11 +40,11 @@ public class MultistateAutomaton implements Automaton {
      *
      */
     public void iterate() {
-        /*DebugCore.debugOut("MultistateAutomaton iteration start");
+        DebugCore.debugOut("MultistateAutomaton iteration start");
         DebugCore.debugOut("States: ");
         DebugCore.debugOut(cellStates);             //debug purpose messages
         DebugCore.debugOut("Moores: ");
-        DebugCore.debugOut(cellMoores);*/
+        DebugCore.debugOut(cellMoores);
         if(edited) updateMoores();
         //DebugCore.debugOut("Updated Moores:")
         //DebugCore.debugOut(cellMoores);
@@ -133,12 +133,13 @@ public class MultistateAutomaton implements Automaton {
     public void clear(){
         cellMoores = new int[size][size];
         cellStates = new int[size][size];
-     /*   for(int i = 0; i< size; i++){
+
+        for(int i = 0; i< size; i++){
             for(int j = 0; j< size; j++){ //TODO if the above works, it will be optimized
                 cellMoores[i][j] = 0;
                 cellStates[i][j] = 0;
             }
-        }*/
+        }
     }
 
     /**

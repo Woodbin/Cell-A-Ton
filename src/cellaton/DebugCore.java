@@ -2,6 +2,9 @@ package cellaton;
 
 import cellaton.util.ErrorCode;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 /**
  * Created by Woodbin on 30.11.2014.
  */
@@ -34,8 +37,13 @@ public class DebugCore {
     private DebugCore(){};
 
     private static void processOut(String message){
-        System.out.println(message);
-        if(consoleExists)windowReference.forwardToConsole(message);
+
+        Date date = new Date();
+
+        Timestamp timestamp = new Timestamp(date.getTime());
+
+        System.out.println("["+ timestamp.toString()+"] "+message);
+        if(consoleExists)windowReference.forwardToConsole("["+ timestamp.toString()+"] "+message);
 
 
     }
@@ -69,7 +77,7 @@ public class DebugCore {
             for (int j = 0; j < pole[i].length; j++) {
                 line += pole[i][j] + "-";
             }
-            DebugCore.debugOut("\n");
+            DebugCore.debugOut(line);
         }
     }
 

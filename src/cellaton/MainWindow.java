@@ -9,6 +9,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 /**
@@ -36,7 +38,7 @@ public class MainWindow {
     private JButton settingsButton;
     private JButton closeButton;
     private JMenuBar menuBar;
-    private Automaton automaton;
+    private Core core = Core.getInstance();
 
     private IGEX igex;
 
@@ -65,12 +67,22 @@ public class MainWindow {
             }
         });
 
+        iterateButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                clickIterate();
+                super.mouseClicked(e);
+            }
+
+        });
+
 
         buildMenu();
         frame.setJMenuBar(menuBar);
 
         assingIcons();
 
+        setWeights();
         frame.pack();
         frame.setVisible(true);
     }
@@ -82,7 +94,7 @@ public class MainWindow {
         loadIcons();
         create();
         DebugCore.setWindowReference(this);
-        setAutomaton(new MultistateAutomaton(16));
+
     }
 
     /**
@@ -90,7 +102,7 @@ public class MainWindow {
      * @param _va class implementing
      */
     public void setAutomaton(Automaton _va){
-        automaton = _va;
+        core.setAutomaton(_va);
     }
 
 
@@ -98,8 +110,8 @@ public class MainWindow {
      * Draws automaton grid to graphical element
      */
     private void draw(Graphics g, int size, boolean drawGrid){
-        int[][] cells = automaton.getCellStates();
-        ArrayList<Color> colors = automaton.getColorScheme();
+        int[][] cells = core.getStates();
+        ArrayList<Color> colors = core.getColors();
         int sizeX = cells[0].length;
         int sizeY = cells.length;
         Color c;
@@ -129,6 +141,24 @@ public class MainWindow {
         }
     }
 
+    private void clickIterate(){
+        core.iterate();
+        drawToPanel();
+    }
+
+    private void drawToPanel(){
+       Graphics g = grid.getGraphics();
+        int planeSize =  core.getStates().length;
+        cellSize = grid.getHeight()/planeSize;
+        DebugCore.debugOut("planesize: " + planeSize);
+        DebugCore.debugOut("graphical size" + cellSize);
+        boolean drawLines = true;
+        if(cellSize<8) drawLines = false;
+        draw(g,cellSize, drawLines);
+
+    }
+
+
     /**
      * Forwards text to consoleOutput
      * @param message
@@ -145,14 +175,15 @@ public class MainWindow {
      * @param y -''-
      */
     private void drawCell(Graphics g, int colorId, int x, int y){
-        Color c = automaton.getColorScheme().get(colorId - 1);
+        Color c = core.getColors().get(colorId - 1);
         g.setColor(c);
         g.fillRect(cellSize * x, cellSize * y, cellSize, cellSize);
     }
 
+
     private void mouseDraw(int mouseX, int mouseY){
         int[] pos = detectCoordinates(mouseX,mouseY);
-        automaton.getCellStates()[pos[0]][pos[1]]=stateBrush;
+        core.setCellState(pos[0],pos[1],stateBrush);
         drawCell(gridScrollPane.getGraphics(), stateBrush,pos[0],pos[1]);
 
     }
@@ -174,6 +205,10 @@ public class MainWindow {
         //TODO Build jmenuBar here
 
         menuBar = new JMenuBar();
+    }
+
+    private void setWeights(){
+
     }
 
     /**
