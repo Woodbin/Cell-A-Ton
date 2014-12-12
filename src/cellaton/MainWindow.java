@@ -3,6 +3,7 @@ package cellaton;
 import cellaton.util.Automaton;
 import cellaton.util.Content;
 import cellaton.util.ContentPipeline;
+import cellaton.util.ErrorCode;
 
 import javax.swing.*;
 import java.awt.*;
@@ -64,7 +65,6 @@ public class MainWindow {
             }
         });
 
-        DebugCore.setWindowReference(this);
 
         buildMenu();
         frame.setJMenuBar(menuBar);
@@ -81,6 +81,7 @@ public class MainWindow {
     public MainWindow(){
         loadIcons();
         create();
+        DebugCore.setWindowReference(this);
         setAutomaton(new MultistateAutomaton(16));
     }
 
@@ -203,7 +204,14 @@ public class MainWindow {
         iterateButton.setIcon(new ImageIcon(Content.getImage("iterateButtonIcon")));
         iterateContinuousButton.setIcon(new ImageIcon(Content.getImage("continuousIterateButtonIcon")));
         settingsButton.setIcon(new ImageIcon(Content.getImage("settingsButtonIcon")));
-        closeButton.setIcon(new ImageIcon(Content.getImage("closeButtonicon")));
-        //TODO assign icons to buttons
+        closeButton.setIcon(new ImageIcon(Content.getImage("closeButtonIcon")));
     }
+
+    private void closeButtonAction(){
+        DebugCore.debugOut(DebugCore.getErrorMessage(ErrorCode.OKAY));
+        System.exit(0);
+
+    }
+
+
 }

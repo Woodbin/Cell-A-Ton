@@ -31,6 +31,7 @@ public class DebugCore {
         consoleExists = true;
     }
 
+    private DebugCore(){};
 
     private static void processOut(String message){
         System.out.println(message);
